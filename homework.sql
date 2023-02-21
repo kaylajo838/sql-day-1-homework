@@ -31,7 +31,8 @@ GROUP BY film_id
 --ORDER BY COUNT(film_id) DESC
 HAVING COUNT(film_id) = 8;
 
--- There are 72 titles that the store has most of. The count of these films are 8 each. 
+-- There are 72 titles that the store has most of, which is 8 copies of each. 
+-- The count of these films are 8 each. 
 -- I left the ORDER BY in my code and commented out to show my thought process. 
 -- The ORDER BY COUNT(film_id) DESC showed me that the top count of the film_id was 8.
 -- I then took that information, and did HAVING COUNT(film_id) = 8 to show only the films that had 8.
@@ -93,7 +94,7 @@ FROM customer;
 
 -- ANSWER: 591, from customer table
 
-
+-- ANSWER: total of 733 distinct names between staff, actor, and customer tables
 
 
 -- ------------------------------------------------------------------------------------------------------------------------
@@ -107,7 +108,7 @@ FROM film_actor
 GROUP BY film_id
 ORDER BY COUNT(actor_id) DESC;
 
--- ANSWER: film_id 508
+-- ANSWER: film_id 508 has 15 actors
 
 
 
