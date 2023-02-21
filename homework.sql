@@ -96,6 +96,7 @@ FROM customer;
 
 -- ANSWER: total of 733 distinct names between staff, actor, and customer tables
 
+-- I didn't know what table to choose from, so I gave several options
 
 -- ------------------------------------------------------------------------------------------------------------------------
 
