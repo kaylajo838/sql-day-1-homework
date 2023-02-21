@@ -132,15 +132,18 @@ GROUP BY store_id;
 
 -- 9. How many payment amounts (4.99, 5.99, etc.) had a number of rentals above 250 for customers
 -- with ids between 380 and 430? (use group by and having > 250)
-SELECT amount, customer_id, COUNT(amount)
+
+SELECT COUNT(amount), amount
 FROM payment
 WHERE customer_id BETWEEN 380 AND 430
-GROUP BY amount, customer_id
+GROUP BY amount
 HAVING COUNT(amount) > 250;
 
 
--- ANSWER: None
--- My search returned No Data. When I ordered the data to try to verify the No Data claim, no count was over 250. 
+-- ANSWER: 3
+-- 2.99 269 times
+-- 6.99 281 times
+-- 4.99 290 times
 
 
 -- ------------------------------------------------------------------------------------------------------------------------
